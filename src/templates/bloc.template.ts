@@ -11,7 +11,7 @@ function getEquatableBlocTemplate (blocName: string) {
   const snakeCaseBlocName = changeCase.snakeCase(blocName.toLowerCase());
   const blocState = `${pascalCaseBlocName}State`;
   const blocEvent = `${pascalCaseBlocName}Event`;
-  return `import 'package:bloc/bloc.dart';
+  return `import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
 part '${snakeCaseBlocName}_event.dart';
